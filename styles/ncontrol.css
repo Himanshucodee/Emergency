@@ -1,0 +1,64 @@
+body {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -o-user-select: none;
+    cursor: default;
+}
+md-tabs-content-wrapper, [md-swipe-left], [md-swipe-right]  { touch-action: pan-y; } 
+
+ #navbar{
+        background-color: black;
+    }
+      .navbar{
+        background-color: black;
+    }
+
+    .ng-valid       {  }
+.ng-invalid     {  }
+.ng-pristine    {  }
+.ng-dirty       {  }
+.ng-touched     {  }
+
+/* really specific css rules applied by angular */
+.ng-invalid-required        {  }
+.ng-invalid-minlength       {  }
+.ng-valid-max-length        {  }
+
+
+/*
+Optional adjustments for md-autocomplete in mobile screens
+*/
+
+#place-autocomplete > md-autocomplete md-input-container {
+  margin-top: -10px;
+}
+
+
+/*Media query for tablets and above */
+
+@media screen and (min-width: 480px) {
+  #place-autocomplete > md-autocomplete md-input-container {
+    padding-bottom: 0;
+  }
+}
+
+  #navbar {
+            background-color: black;
+        }
+        
+        #main {
+            margin-top: 100px;
+        }
+        
+        #nav {
+            margin-bottom: 20px;
+        }
+        
+        #thumbnail {
+           
+            position: relative;
+ 
+        }
+        

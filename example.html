@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type='text/javascript'
+  src='http://code.jquery.com/jquery-git2.js'></script>
+<script type='text/javascript'
+  src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.1.0/bootstrap.min.js"></script>
+<script type='text/javascript'
+  src="http://eternicode.github.io/bootstrap-datepicker/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+<style type='text/css'>
+@import url('http://getbootstrap.com/dist/css/bootstrap.css');
+@import<!--from w ww  . j  a  v  a 2s  .  c o  m-->
+  url('http://eternicode.github.io/bootstrap-datepicker/bootstrap-datepicker/css/datepicker.css')
+  ;
+</style>
+<script type='text/javascript'>
+$(window).load(function(){
+    $('.input-daterange').datepicker({});
+});
+</script>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-5">
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <h3 class="panel-title">Panel title</h3>
+          </div>
+          <div class="panel-body">
+            <form class="form-horizontal" role="form">
+              <div class="form-group">
+                <label for="inputEmail3" class="col-sm-3 control-label">Email</label>
+                <div class="col-sm-9">
+                  <input type="email" class="form-control" id="inputEmail3"
+                    placeholder="Email" />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="inputPassword3" class="col-sm-3 control-label">Password</label>
+                <div class="col-sm-9">
+                  <input type="password" class="form-control" id="inputPassword3"
+                    placeholder="Password" />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="inputPassword3" class="col-sm-3 control-label">Skill</label>
+                <div class="col-sm-9">
+                  <select class="form-control">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-sm-3 control-label">Dates range</label>
+                <div class="col-sm-9">
+                  <div class="input-daterange" id="datepicker">
+                    <div class="input-group">
+                      <input type="text" class="input-small form-control"
+                        name="start" /> <span class="input-group-addon">to</span> <input
+                        type="text" class="input-small form-control" name="end" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                  <div class="checkbox">
+                    <label> <input type="checkbox" />Remember me
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                  <button type="submit" class="btn btn-default">Sign in</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-7">
+        <div class="panel panel-primary">
+          <div class="panel-heading clearfix">
+            <h3 class="panel-title pull-left">Chart panel</h3>
+            <div class="btn-group btn-group-xs pull-right">
+              <a href="#" class="btn btn-success"><span
+                class="glyphicon glyphicon-plus"></span></a> <a href="#"
+                class="btn btn-danger"><span
+                class="glyphicon glyphicon-minus"></span></a>
+            </div>
+            <div class="clearfix"></div>
+          </div>
+          <div class="panel-body">Panel content</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
